@@ -5,62 +5,72 @@
     <meta charset="utf-8">
     <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scaleable=yes">
+     <link rel="stylesheet" href="view.css">
 </head>
-<body>
-    <p>
-    <h1>회원가입</h1>
-        <form>
-            <fieldset>
-                <legend>필수입력정보</legend>
-            <p>
-                <label>이메일 
-                    <input type="email" name="email">
-                </label>
-            </p>
-                
-                
-            <p>
-                <label for="password">비밀번호</label>
-                    <input type-"password" id="password">
-            </p>
-                
-                
-            <p>비밀번호 확인
-                <input type-"password" name="password">
-            </p>
-            </fieldset>
+    <body>
+        <p>
+            <h1>회원가입</h1>
+                <form>
+                    <fieldset style="border-width: 3px; border-style:dotted; background:#fff255;">
+                        
+                            <legend style="background-color: #00e599; padding: 7px;"><span class="legend-white">필수 입력 정보</span></legend>
+                        <p></p>
+                    <table>
+                        <tr>
+                        <th><label for="emailid">이메일</label></th>
+                    	<td><input type="email" name="email" id="emailid" size="15"></td>
+                     </tr>
+                	<tr>
+                    	<th><label for="passwordid">비밀번호</label></th>
+                    	<td><input type="password" name="password" id="passwordid" size="20"></td>
+                    </tr>
+                	<tr>
+                    	<th><label for="passwordid2">비밀번호 확인</label></th>
+                    	<td><input type="password" name="password" id="passwordid2" size="20"></td>
+                    </tr>
+                        </table>
+                    
+                    </fieldset>
             
-            
+                        <p> 
+                        </p>
             
     
-            <form action="a.html" form method="post">
-            <fieldset>
-                <legend>선택입력정보</legend>
-                연락처
-                <select name="phone1">
-                    <option value="010">010</option>
-                    <option value="070">070</option>
-                    <option value="02">02</option>
-                    <option value="032">032</option>
-                    <option value="042">042</option>
-                    <option value="031">031</option>
-                </select>
-                <input type="text" name="phone2" size="6" maxlength="4">
-                <input type="text" name="phone3" size="6" maxlength="4">
+                    
+                    
+                    
+                    
+                    <form action="aaa.html" form method="post">
+                    <fieldset style="border-width: 3px; border-style:dotted; background:#fff255;">
+                        
+                        <legend style="background-color: #00e599; padding: 7px;"><span class="legend-white">선택 입력 정보</span></legend>
+                        <table>
+                <tr>
+                    	<th><label for="phoneid">전화번호</label></th>
+                    	<td>
+                        <select name="phone1" id="phoneid">
+                    		<option value="010" selected>010</option>
+                    		<option value="02">02</option>
+                    		<option value="031">031</option>
+                    		<option value="070">070</option>
+                		</select>
+                		<input type="tel" name="phone2" size="10" maxlength="4">
+                		<input type="tel" name="phone3" size="10" maxlength="4">
+                		</td>
+                    </tr>
+                	<tr>
+                    	<th><label for="dateid">생년월일</label></th>
+                    	<td><input type="date" name="birth" id="dateid" size="100"></td>
+                    </tr>
+                        </table>
+                
+                    </fieldset>
+                <p>
+                </p>
             
-            <p>생년월일
-                <input type="date" name="birth">
-            </p>
-            </fieldset>
-            
-            <button type="submit">가입</button>
-            <button type="submit">취소</button>
-        </form>
-            
-            
-    </p>
-    
-       
-       
-</body>
+                    <button type="submit">가입</button>
+                    <button type="submit">취소</button>
+                </form>
+                
+        </body>
 </html> 
